@@ -51,6 +51,42 @@ class PerfilScreen extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
+
+            SizedBox(height: 16), // estpaçamento vertical
+
+            const Text(
+              'Samira Vieira',
+              // Alinhamento do Texto
+              textAlign: TextAlign.center,
+              // Stilizando o texto
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+
+            const SizedBox(height: 4),
+
+            const Text(
+              'Desenvolvedora de Software',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 16, color: Colors.grey),
+            ),
+
+            const SizedBox(height: 24),
+
+            Container(
+              // epaçamento interno ( espaçamento dentro da nossa caixa)
+              padding: const EdgeInsets.all(16),
+
+              // Decoration controla a aparencia visual do container
+              decoration: BoxDecoration(
+                // cor de fundo
+                color: Colors.deepPurple.shade50,
+                // Arredonda os quatros cantos
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Row(
+                children: [Icon(Icons.email), Text('samira@emaiil.com')],
+              ),
+            ),
           ],
         ),
       ),
