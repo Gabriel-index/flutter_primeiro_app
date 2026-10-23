@@ -52,44 +52,40 @@ class PerfilScreen extends StatelessWidget {
               ),
             ),
 
-            SizedBox(height: 16), // estpaçamento vertical
+            SizedBox(height: 16), // Espaço entre o avatar e o nome
 
             const Text(
-              'Samira Vieira',
-              // Alinhamento do Texto
+              'Gaga + Yas',
+              // alinhamento do texto, nesse caso centralizado
               textAlign: TextAlign.center,
-              // Stilizando o texto
+              // estilizando o texto
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
 
             const SizedBox(height: 4),
-
             const Text(
-              'Desenvolvedora de Software',
+              'gaga+yas@example.com',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 16, color: Colors.grey),
+              style: TextStyle(fontSize: 16, color: Colors.grey,),
             ),
 
-            const SizedBox(height: 24),
+            const SizedBox(height: 24), // Espaço entre o email e os botões
 
             Container(
-              // epaçamento interno ( espaçamento dentro da nossa caixa)
-              padding: const EdgeInsets.all(16),
 
-              // Decoration controla a aparencia visual do container
               decoration: BoxDecoration(
-                // cor de fundo
-                color: Colors.deepPurple.shade50,
-                // Arredonda os quatros cantos
-                borderRadius: BorderRadius.circular(12),
+                color: Colors.deepPurple[50],
+                borderRadius: BorderRadius.circular(8),
               ),
-              child: Row(
-                children: [Icon(Icons.email), Text('samira@emaiil.com')],
-              ),
-            ),
+            child: Row(
+              children: [Icon(Icons.email), Text('lucas@gmail.com')]
+            )
+            )
+
           ],
         ),
       ),
     );
   }
 }
+ 
