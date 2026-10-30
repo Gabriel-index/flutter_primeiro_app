@@ -1,7 +1,6 @@
-// import 'package:aplicacao_flutter/screens/perfil_screen.dart';
-// import 'package:aplicacao_flutter/screens/catalogo_screen.dart';
-import 'package:aplicacao_flutter/screens/preference_screen.dart';
 import 'package:flutter/material.dart';
+// Importação correta da tela de registro que criámos
+import 'package:aplicacao_flutter/screens/register_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,12 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // remove a faixa de DEBUG
+      // Remove a faixa de DEBUG
       debugShowCheckedModeBanner: false,
-      // Home recebe nosso primeiro Wifget
-      // que será exibido pelo aplicativo
-      home: const PreferenceScreen(),
+      // Home recebe o nosso widget inicial do aplicativo (a tela de cadastro)
+      home: const RegisterScreen(),
     );
   }
 }
- 
